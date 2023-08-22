@@ -27,7 +27,9 @@ export default function CategoryCreate(props){
             img,
         }
         router
-            .post(`/admin/project`, data)
+            .post(`/admin/project`, data, {
+                'X-Inertia': true,
+            })
 
     }
 

@@ -12,7 +12,9 @@ export default function CategoryCreate(){
         const data = {
             name_category
         }
-        router.post(`/admin/category`, data)
+        router.post(`/admin/category`, data, {
+            'X-Inertia': true,
+        })
         setnameCategory('')
     }
 

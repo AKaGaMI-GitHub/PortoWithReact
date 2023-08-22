@@ -10,7 +10,9 @@ export default function CategoryEdit(props){
         const data = {
             id: props.category.id, name_category
         }
-        router.put(`/admin/category/${props.category.id}`, data)
+        router.put(`/admin/category/${props.category.id}`, data, {
+            'X-Inertia': true,
+        })
     }
     return (
         <AdminLayout>

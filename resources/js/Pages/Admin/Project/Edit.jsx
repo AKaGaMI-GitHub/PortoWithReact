@@ -36,6 +36,8 @@ export default function CategoryCreate(props){
                 link_behance: data.link_behance,
                 link_dribbble: data.link_dribbble,
                 img: data.img,
+            }, {
+                'X-Inertia': true,
             })
 
     }
