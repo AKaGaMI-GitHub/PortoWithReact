@@ -6,24 +6,24 @@ export default function AboutSection(){
     return (
         <section id="about" className="w-full max-w-screen-lg px-4 pt-24 mx-auto bg-white md:pt-40">
             <div className="flex flex-col-reverse md:grid md:grid-cols-2 md:gap-4">
-                <motion.div initial={{x: -100, opacity: 0}} whileInView={{x:0, opacity:1, transition:{ ease: [0.6,0.01,0.05,0.95], duration: 1.7 }}} viewport={{once : true}} className="flex flex-col items-center">
+                <motion.div initial={{x: -15, opacity: 0}} whileInView={{x:0, opacity:1, transition:{ ease: [0.6,0.01,0.05,0.95], duration: 1.7 }}} viewport={{once : true}} className="flex flex-col items-center">
                     <div className="text-center md:text-left">
                         <h1 className="font-bold text-[28px] md:text-[48px]">Developed product with user experience oriented.</h1>
                         <div className="py-4 text-[16px] md:text-[20px]">User experience is a important part of developing product, because a good user experience, it will give a good impression to users.</div>
                     </div>
                 </motion.div>
-                <motion.div initial={{x: 100, opacity: 0}} whileInView={{x:0, opacity:1, transition:{ ease: [0.6,0.01,0.05,0.95], duration: 1.7 }}} viewport={{once : true}} className="flex justify-center">
+                <motion.div initial={{x: 15, opacity: 0}} whileInView={{x:0, opacity:1, transition:{ ease: [0.6,0.01,0.05,0.95], duration: 1.7 }}} viewport={{once : true}} className="flex justify-center">
                     <iframe className="w-[500px] h-[300px] md:w-[500px] md:h-[360px]" src="https://rive.app/s/rWo4CFolZUKIoqxPHk_cjQ/embed"></iframe>
                 </motion.div>
             </div>
             <div className="flex flex-col pt-8 md:pt-20 md:grid md:grid-cols-2 md:gap-4">
-                <motion.div initial={{x: -100, opacity: 0}} whileInView={{x:0, opacity:1, transition:{ ease: [0.6,0.01,0.05,0.95], duration: 1.7 }}} viewport={{once : true}} className="flex items-center justify-center">
+                <motion.div initial={{x: -15, opacity: 0}} whileInView={{x:0, opacity:1, transition:{ ease: [0.6,0.01,0.05,0.95], duration: 1.7 }}} viewport={{once : true}} className="flex items-center justify-center">
                     <object className="w-[390px] h-[300px] md:w-[600px] md:h-[360px]" data="/img/AvatarFix.svg" type="image/svg+xml">SVG not supported</object>
                 </motion.div>
                 <div className="flex flex-col items-center">
                     <div className="text-center md:text-left">
-                        <motion.div initial={{x: 100, opacity: 0}} whileInView={{x:0, opacity:1, transition:{ ease: [0.6,0.01,0.05,0.95], duration: 1.7 }}} viewport={{once : true}} className="font-bold text-[32px] md:text-[48px]">Work Experience</motion.div>
-                        <motion.div initial={{x: 100, opacity: 0}} whileInView={{x:0, opacity:1, transition:{ ease: [0.6,0.01,0.05,0.95], duration: 1.7 }}} viewport={{once : true}} className="md:py-[14px] py-[18px]">
+                        <motion.div initial={{x: 15, opacity: 0}} whileInView={{x:0, opacity:1, transition:{ ease: [0.6,0.01,0.05,0.95], duration: 1.7 }}} viewport={{once : true}} className="font-bold text-[32px] md:text-[48px]">Work Experience</motion.div>
+                        <motion.div initial={{x: 15, opacity: 0}} whileInView={{x:0, opacity:1, transition:{ ease: [0.6,0.01,0.05,0.95], duration: 1.7 }}} viewport={{once : true}} className="md:py-[14px] py-[18px]">
                             <div className="mx-2 text-center md:text-left">
                                 <div className="font-bold md:text-[24px] text-[22px]">Web Programmer</div>
                                 <div className="font-medium text-[18px] text-slate-600">Queens Tandoor</div>
@@ -33,7 +33,7 @@ export default function AboutSection(){
                                 </div>
                             </div>
                         </motion.div>
-                        <motion.div initial={{x: 100, opacity: 0}} whileInView={{x:0, opacity:1, transition:{ ease: [0.6,0.01,0.05,0.95], duration: 1.7 }}} viewport={{once : true}} className="md:py-[14px] py-[8px]">
+                        <motion.div initial={{x: 15, opacity: 0}} whileInView={{x:0, opacity:1, transition:{ ease: [0.6,0.01,0.05,0.95], duration: 1.7 }}} viewport={{once : true}} className="md:py-[14px] py-[8px]">
                             <div className="mx-2 text-center md:text-left">
                                 <div className="font-bold md:text-[24px] text-[22px]">Web Programmer & SEO Specialist</div>
                                 <div className="font-medium text-[18px] text-slate-600">CV.Rumah Media</div>
@@ -43,7 +43,7 @@ export default function AboutSection(){
                                 </div>
                             </div>
                         </motion.div>
-                        <motion.div initial={{x: 100, opacity: 0}} whileInView={{x:0, opacity:1, transition:{ ease: [0.6,0.01,0.05,0.95], duration: 1.7 }}} viewport={{once : true}} className="md:py-[14px] py-[8px]">
+                        <motion.div initial={{x: 15, opacity: 0}} whileInView={{x:0, opacity:1, transition:{ ease: [0.6,0.01,0.05,0.95], duration: 1.7 }}} viewport={{once : true}} className="md:py-[14px] py-[8px]">
                             <div className="mx-2 text-center md:text-left">
                                 <div className="font-bold md:text-[24px] text-[22px]">Software Engineer</div>
                                 <div className="font-medium text-[18px] text-slate-600">Veterinarian Clinic drh.I Gusti Ayu Endang Puspitasari</div>

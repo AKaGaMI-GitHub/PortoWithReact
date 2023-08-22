@@ -17,7 +17,7 @@ export default function Index (props) {
             const about = document.getElementById("about");
             const project = document.getElementById("project");
             const contact = document.getElementById("contact");
-
+            
             const scrollPosition = window.scrollY;
 
             if (scrollPosition >= home.offsetTop && scrollPosition < about.offsetTop - 10) {
@@ -46,6 +46,7 @@ export default function Index (props) {
             <ProjectSection data={props} />
             <ContactSection />
             <FooterSection />
+            
         </>
     )
 }
