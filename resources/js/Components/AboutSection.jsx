@@ -5,7 +5,7 @@ import { SiLaravel, SiReact, SiHtml5, SiCss3, SiJavascript, SiFigma, SiTailwindc
 export default function AboutSection(){
     return (
         <section id="about" className="w-full max-w-screen-lg px-4 pt-24 mx-auto bg-white md:pt-40">
-            <div className="flex flex-col-reverse md:grid md:grid-cols-2 md:gap-4">
+            <div className="flex flex-col-reverse mx-4 md:grid md:grid-cols-2 md:gap-4">
                 <motion.div initial={{x: -15, opacity: 0}} whileInView={{x:0, opacity:1, transition:{ ease: [0.6,0.01,0.05,0.95], duration: 1.7 }}} viewport={{once : true}} className="flex flex-col items-center">
                     <div className="text-center md:text-left">
                         <h1 className="font-bold text-[28px] md:text-[48px]">Developed product with user experience oriented.</h1>
@@ -16,7 +16,7 @@ export default function AboutSection(){
                     <iframe className="w-[500px] h-[300px] md:w-[500px] md:h-[360px]" src="https://rive.app/s/rWo4CFolZUKIoqxPHk_cjQ/embed"></iframe>
                 </motion.div>
             </div>
-            <div className="flex flex-col pt-8 md:pt-20 md:grid md:grid-cols-2 md:gap-4">
+            <div className="flex flex-col pt-8 mx-4 md:pt-20 md:grid md:grid-cols-2 md:gap-4">
                 <motion.div initial={{x: -15, opacity: 0}} whileInView={{x:0, opacity:1, transition:{ ease: [0.6,0.01,0.05,0.95], duration: 1.7 }}} viewport={{once : true}} className="flex items-center justify-center">
                     <object className="w-[390px] h-[300px] md:w-[600px] md:h-[360px]" data="/img/AvatarFix.svg" type="image/svg+xml">SVG not supported</object>
                 </motion.div>
