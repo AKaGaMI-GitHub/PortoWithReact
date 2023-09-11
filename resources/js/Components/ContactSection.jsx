@@ -9,7 +9,7 @@ export default function ContactSection () {
                 <div className="text-[16px] md:text-[18px] py-4 text-center md:text-justify">I love disscuss about product design, collaborating works, and playing games. you can find me on</div>
             </motion.div>
             <motion.div initial={{y: 40, opacity: 0}} whileInView={{y:0, opacity:1, transition:{ ease: "easeInOut", duration: 0.8 }}} viewport={{once : true}} className="flex flex-col items-center md:grid md:grid-cols-3 md:gap-4">
-                <motion.a whileHover={{scale: 1.05}} href="https:wa.me/+6282146855989" target="_blank" className="flex flex-row items-center mx-4 my-2 bg-white border border-gray-200 rounded-lg shadow md:mx-0">
+                <motion.a whileHover={{scale: 1.05}} href="https://wa.me/+6282146855989" target="_blank" className="flex flex-row items-center mx-4 my-2 bg-white border border-gray-200 rounded-lg shadow md:mx-0">
                     <img className="w-[54px] md:w-[60px] mx-4" alt="Whatsapp" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"/>
                     <div className="flex flex-col justify-between py-4">
                         <h5 className="mb-2 text-[18px] md:text-[24px] font-bold tracking-tight text-gray-900">WhatsApp</h5>
@@ -23,7 +23,7 @@ export default function ContactSection () {
                         <p className="mb-3 mr-2 font-normal text-[14px] md:text-[16px] text-gray-700">Gmail is the way to connect with me formaly</p>
                     </div>
                 </motion.a>
-                <motion.a whileHover={{scale: 1.05}} href="https:discordapp.com/users/322940700205383682" target="_blank" className="flex flex-row items-center mx-4 my-2 bg-white border border-gray-200 rounded-lg shadow md:mx-0">
+                <motion.a whileHover={{scale: 1.05}} href="https://discordapp.com/users/322940700205383682" target="_blank" className="flex flex-row items-center mx-4 my-2 bg-white border border-gray-200 rounded-lg shadow md:mx-0">
                     <img className="w-[54px] md:w-[60px] mx-4" alt="Discord" src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png"/>
                     <div className="flex flex-col justify-between py-4">
                         <h5 className="mb-2 text-[18px] md:text-[24px] font-bold tracking-tight text-gray-900">Discord</h5>
