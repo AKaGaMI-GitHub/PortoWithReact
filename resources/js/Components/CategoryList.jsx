@@ -5,12 +5,13 @@ const CategoryList = ({ category }) => {
 }
 
 const isCategory = (category) => {
-    return category.map((data, i) => {
+    let number = 1;
+    return category.map((data) => {
         return (
             <tbody>
-                <tr className="bg-white border-b">
+                <tr className="bg-white border-b" key={data.id}>
                     <th scope="row" className="px-6 py-4">
-                        {data.id}
+                        {number++}
                     </th>
                     <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                         {data.name_category}

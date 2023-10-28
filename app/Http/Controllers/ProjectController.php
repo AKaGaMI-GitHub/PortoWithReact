@@ -17,7 +17,6 @@ class ProjectController extends Controller
     public function index()
     {
         $project = Project::with('category')->paginate(10);
-        // dd($project[0]->category->name_category);
 
         return Inertia::render('Admin/Project/Index', [
             'project' => $project
@@ -45,15 +44,6 @@ class ProjectController extends Controller
      */
     public function store(Request $request)
     {
-        // $request->validate([
-        //     'title' => 'required',
-        //     'description' => 'required',
-        //     'category_id' => 'required|numeric',
-        //     'link_github' => 'nullable',
-        //     'link_behance' => 'nullable',
-        //     'link_dribbble' => 'nullable',
-        //     'img' => 'mimes:jpg,png|max:2048',
-        // ]);
         if (@$request->file('img')) {
             $img = $request->file('img')->store('public/img');
         }
@@ -61,6 +51,7 @@ class ProjectController extends Controller
             'title' => $request->title,
             'description' => $request->description,
             'category_id' => $request->category_id,
+            'link_production' => $request->link_production,
             'link_github' => $request->link_github,
             'link_behance' => $request->link_behance,
             'link_dribbble' => $request->link_dribbble,
@@ -112,6 +103,7 @@ class ProjectController extends Controller
                 'title' => $request->title,
                 'description' => $request->description,
                 'category_id' => $request->category_id,
+                'link_production' => $request->link_production,
                 'link_github' => $request->link_github,
                 'link_behance' => $request->link_behance,
                 'link_dribbble' => $request->link_dribbble,
@@ -122,6 +114,7 @@ class ProjectController extends Controller
                 'title' => $request->title,
                 'description' => $request->description,
                 'category_id' => $request->category_id,
+                'link_production' => $request->link_production,
                 'link_github' => $request->link_github,
                 'link_behance' => $request->link_behance,
                 'link_dribbble' => $request->link_dribbble,

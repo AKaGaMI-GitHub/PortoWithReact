@@ -15,7 +15,7 @@ export default function CategoryCreate(){
         router.post(`/admin/category`, data, {
             'X-Inertia': true,
         })
-        setnameCategory('')
+        setCategory('')
     }
 
     return (

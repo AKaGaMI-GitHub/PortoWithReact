@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import { useEffect, useRef } from "react";
-import { SiLaravel, SiReact, SiHtml5, SiCss3, SiJavascript, SiFigma, SiTailwindcss } from "react-icons/si";
+import { SiLaravel, SiReact, SiHtml5, SiCss3, SiJavascript, SiFigma, SiTailwindcss, SiTypescript } from "react-icons/si";
 
 export default function AboutSection(){
     return (
@@ -78,6 +78,12 @@ export default function AboutSection(){
                         <p className="font-semibold text-black ">JavaScript</p>
                     </div>
                     <div className="py-[8px] px-[12px] m-2 text-center">
+                        <motion.div animate={{y:[0, 12, 8, -8, -12, -2], rotate:[0, 90, 180, 270, 360]}} transition={{duration: 4, ease: "easeInOut", times: [1], repeat: Infinity, repeatDelay: 0}}>
+                            <SiTypescript className="text-[#3178c6] text-[64px] md:text-[80px]" />
+                        </motion.div>
+                        <p className="font-semibold text-black ">TypeScript</p>
+                    </div>
+                    <div className="py-[8px] px-[12px] m-2 text-center">
                         <motion.div animate={{scale: [1, 1.1, 1]}} transition={{duration: 2, ease: "easeIn", times: [0], repeat: Infinity, repeatDelay: 0}}>
                             <SiLaravel className="text-[#ff0000] text-[64px] md:text-[80px]"></SiLaravel>
                         </motion.div>
@@ -88,6 +94,12 @@ export default function AboutSection(){
                             <SiReact className="text-sky-400 text-[64px] md:text-[80px]"></SiReact>
                         </motion.div>
                         <p className="font-semibold text-black">React Js</p>
+                    </div>
+                    <div className="flex flex-col items-center py-[8px] px-[12px] m-2 text-center">
+                        <motion.div animate={{rotate: [0, -90, -180, -270, -360]}} transition={{duration: 5, ease: "easeInOut", times: [0], repeat: Infinity, repeatDelay: 0}}>
+                            <SiReact className="text-sky-600 text-[64px] md:text-[80px]"></SiReact>
+                        </motion.div>
+                        <p className="font-semibold text-black">React Native</p>
                     </div>
                     <div className="py-[8px] px-[12px] m-2 text-center">
                         <motion.div animate={{rotate: [15, 0, 15]}} transition={{duration: 2, ease: "easeIn", times: [0], repeat: Infinity, repeatDelay: 0}}>

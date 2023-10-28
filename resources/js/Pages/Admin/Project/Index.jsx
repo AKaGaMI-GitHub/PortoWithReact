@@ -3,6 +3,7 @@ import { Head, Link } from "@inertiajs/react";
 import React from "react";
 
 export default function ProjectIndex(props){
+    let number = 1;
     return (
         <AdminLayout>
             <Head title="Projects"></Head>
@@ -39,7 +40,7 @@ export default function ProjectIndex(props){
                                     {props.project.data.map((data) => (
                                         <tr className="bg-white border-b" key={data.id}>
                                             <th scope="row" className="px-6 py-4">
-                                                {data.id}
+                                                {number++}
                                             </th>
                                             <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                                                 {data.title}

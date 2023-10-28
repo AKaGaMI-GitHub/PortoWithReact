@@ -11,6 +11,7 @@ export default function CategoryCreate(props){
     const [title, setTitle] = useState('')
     const [description, setDescription] = useState('')
     const [category_id, setCategory] = useState('')
+    const [link_production, setLinkProduction] = useState('')
     const [link_github, setLinkGithub] = useState('')
     const [link_behance, setLinkBehance] = useState('')
     const [link_dribbble, setLinkDribbble] = useState('')
@@ -21,6 +22,7 @@ export default function CategoryCreate(props){
             title,
             description,
             category_id,
+            link_production,
             link_github,
             link_behance,
             link_dribbble,
@@ -52,6 +54,10 @@ export default function CategoryCreate(props){
                             <option value="">Select Category</option>
                             <DropdownList category={props.category}/> 
                         </select>
+                    </div>
+                    <InputLabel htmlFor="link_website" value="Website (On Production)" className="text-xl"/>
+                    <div className="py-4">
+                        <input className="block w-[500px] mb-2 text-sm font-medium text-gray-700" placeholder="Link Website example: https://example.com" onChange={(link_production) => setLinkProduction(link_production.target.value)}/>
                     </div>
                     <InputLabel htmlFor="link_github" value="Github" className="text-xl"/>
                     <div className="py-4">

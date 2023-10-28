@@ -18,7 +18,7 @@ export default function HomeSection(){
                 <motion.a whileHover={{scale:1.2}} href="https://www.behance.net/madeananthayoga" className="p-3 m-2 text-white bg-blue-600 rounded-full text-md md:text-2xl"><FaBehance /></motion.a>
             </motion.div>
             <motion.div initial={{y: 100, opacity: 0}} whileInView={{y:0, opacity:1, transition:{ ease: [0.6,0.01,0.05,0.95], duration: 1.7 }}} viewport={{once : true}} className="flex justify-center pt-2">
-                <motion.a whileHover={{scale:1.2}} href="pdf/CV-Eng.pdf" target="_blank" className="py-3 px-4 m-2 text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-[14px] md:text-[16px]">Download CV</motion.a>
+                <motion.a whileHover={{scale:1.05}} href="pdf/CV-Eng.pdf" target="_blank" className="py-3 px-4 m-2 text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-[14px] md:text-[16px]">Download CV</motion.a>
             </motion.div>
         </section>
     )

@@ -45,9 +45,9 @@ export default function AdminLayout({children, ...props}){
                         </Link>
                         </li>
                         <li>
-                        <LogoutButton method="post" href={route('logout')} as="button">
-                                    Log Out
-                                </LogoutButton>
+                            <LogoutButton method="post" href={route('logout')} as="button">
+                                Log Out
+                            </LogoutButton>
                         </li>
                     </ul>
                     </div>

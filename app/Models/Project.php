@@ -13,6 +13,7 @@ class Project extends Model
         'title',
         'description',
         'category_id',
+        'link_production',
         'link_github',
         'link_behance',
         'link_dribbble',
