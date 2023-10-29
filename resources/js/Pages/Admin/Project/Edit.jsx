@@ -10,6 +10,7 @@ export default function CategoryCreate(props){
     const [title, setTitle] = useState(props.project.title)
     const [description, setDescription] = useState(props.project.description)
     const [category_id, setCategory] = useState(props.project.category_id)
+    const [link_production, setLinkProduction] = useState(props.project.link_production)
     const [link_github, setLinkGithub] = useState(props.project.link_github)
     const [link_behance, setLinkBehance] = useState(props.project.behance)
     const [link_dribbble, setLinkDribbble] = useState(props.project.dribbble)
@@ -21,6 +22,7 @@ export default function CategoryCreate(props){
             title,
             description,
             category_id,
+            link_production,
             link_github,
             link_behance,
             link_dribbble,
@@ -32,6 +34,7 @@ export default function CategoryCreate(props){
                 title: data.title,
                 description: data.description,
                 category_id: data.category_id,
+                link_production: data.link_production,
                 link_github: data.link_github,
                 link_behance: data.link_behance,
                 link_dribbble: data.link_dribbble,
@@ -61,6 +64,10 @@ export default function CategoryCreate(props){
                             <option value={props.project.category_id}>{props.project.category.name_category}</option>
                             <DropdownList category={props.category}/> 
                         </select>
+                    </div>
+                     <InputLabel htmlFor="link_website" value="Website (On Production)" className="text-xl"/>
+                    <div className="py-4">
+                        <input className="block w-[500px] mb-2 text-sm font-medium text-gray-700" placeholder="Link Website example: https://example.com" onChange={(link_production) => setLinkProduction(link_production.target.value)} defaultValue={props.project.link_production}/>
                     </div>
                     <InputLabel htmlFor="link_github" value="Github" className="text-xl"/>
                     <div className="py-4">
