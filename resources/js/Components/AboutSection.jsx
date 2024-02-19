@@ -16,7 +16,7 @@ export default function AboutSection(){
                     <iframe className="w-[500px] h-[300px] md:w-[500px] md:h-[360px]" src="https://rive.app/s/rWo4CFolZUKIoqxPHk_cjQ/embed"></iframe>
                 </motion.div>
             </div>
-            <div className="flex flex-col pt-8 mx-4 md:pt-20 md:grid md:grid-cols-2 md:gap-4">
+            <div className="flex flex-col items-start pt-8 mx-4 md:pt-20 md:grid md:grid-cols-2 md:gap-4">
                 <motion.div initial={{x: -15, opacity: 0}} whileInView={{x:0, opacity:1, transition:{ ease: [0.6,0.01,0.05,0.95], duration: 1.7 }}} viewport={{once : true}} className="flex items-center justify-center">
                     <object className="w-[390px] h-[300px] md:w-[600px] md:h-[360px]" data="/img/AvatarFix.svg" type="image/svg+xml">SVG not supported</object>
                 </motion.div>
@@ -25,10 +25,30 @@ export default function AboutSection(){
                         <motion.div initial={{x: 15, opacity: 0}} whileInView={{x:0, opacity:1, transition:{ ease: [0.6,0.01,0.05,0.95], duration: 1.7 }}} viewport={{once : true}} className="font-bold text-[32px] md:text-[48px]">Work Experience</motion.div>
                         <motion.div initial={{x: 15, opacity: 0}} whileInView={{x:0, opacity:1, transition:{ ease: [0.6,0.01,0.05,0.95], duration: 1.7 }}} viewport={{once : true}} className="md:py-[14px] py-[18px]">
                             <div className="mx-2 text-center md:text-left">
+                                <div className="font-bold md:text-[24px] text-[22px]">Fullstack Developer</div>
+                                <div className="font-medium text-[18px] text-slate-600">UPA TIK Universitas Pendidikan Ganesha</div>
+                                <div className="text-[16px] text-slate-500">Nov 2023 - Now</div>
+                                <div className="flex items-center justify-center md:justify-start">
+                                    <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-[78px] py-[4px] mt-[6px] rounded-full font-medium text-[14px] text-[#FaFaFa] text-center">Full Time</div>
+                                </div>
+                            </div>
+                        </motion.div>
+                        <motion.div initial={{x: 15, opacity: 0}} whileInView={{x:0, opacity:1, transition:{ ease: [0.6,0.01,0.05,0.95], duration: 1.7 }}} viewport={{once : true}} className="md:py-[14px] py-[18px]">
+                            <div className="mx-2 text-center md:text-left">
+                                <div className="font-bold md:text-[24px] text-[22px]">Fullstack Developer</div>
+                                <div className="font-medium text-[18px] text-slate-600">Freelance</div>
+                                <div className="text-[16px] text-slate-500">Aug 2023 - Nov 2023</div>
+                                <div className="flex items-center justify-center md:justify-start">
+                                    <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-[78px] py-[4px] mt-[6px] rounded-full font-medium text-[14px] text-[#FaFaFa] text-center">Full Time</div>
+                                </div>
+                            </div>
+                        </motion.div>
+                        <motion.div initial={{x: 15, opacity: 0}} whileInView={{x:0, opacity:1, transition:{ ease: [0.6,0.01,0.05,0.95], duration: 1.7 }}} viewport={{once : true}} className="md:py-[14px] py-[18px]">
+                            <div className="mx-2 text-center md:text-left">
                                 <div className="font-bold md:text-[24px] text-[22px]">Web Programmer</div>
                                 <div className="font-medium text-[18px] text-slate-600">Queens Tandoor</div>
                                 <div className="text-[16px] text-slate-500">August 2022 - April 2023</div>
-                                <div className="flex items-start items-center justify-center md:justify-start">
+                                <div className="flex items-center justify-center md:justify-start">
                                     <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-[78px] py-[4px] mt-[6px] rounded-full font-medium text-[14px] text-[#FaFaFa] text-center">Full Time</div>
                                 </div>
                             </div>
@@ -38,7 +58,7 @@ export default function AboutSection(){
                                 <div className="font-bold md:text-[24px] text-[22px]">Web Programmer & SEO Specialist</div>
                                 <div className="font-medium text-[18px] text-slate-600">CV.Rumah Media</div>
                                 <div className="text-[16px] text-slate-500">January 2022 - March 2022</div>
-                                <div className="flex items-start items-center justify-center md:justify-start">
+                                <div className="flex items-center justify-center md:justify-start">
                                     <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-[85px] py-[4px] mt-[6px] rounded-full font-medium text-[14px] text-[#FaFaFa] text-center">Internship</div>
                                 </div>
                             </div>
@@ -48,7 +68,7 @@ export default function AboutSection(){
                                 <div className="font-bold md:text-[24px] text-[22px]">Software Engineer</div>
                                 <div className="font-medium text-[18px] text-slate-600">Veterinarian Clinic drh.I Gusti Ayu Endang Puspitasari</div>
                                 <div className="text-[16px] text-slate-500">January 2021 - March 2021</div>
-                                <div className="flex items-start items-center justify-center md:justify-start">
+                                <div className="flex items-center justify-center md:justify-start">
                                     <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-[85px] py-[4px] mt-[6px] rounded-full font-medium text-[14px] text-[#FaFaFa] text-center">Internship</div>
                                 </div>
                             </div>
